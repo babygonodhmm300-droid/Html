@@ -215,18 +215,7 @@
         </div>
     </div>
 
-    <script>
-        // ฟังก์ชันสำหรับเปลี่ยน URL ให้เป็นแบบมีพารามิเตอร์
-        function redirectToNewURL() {
-            // ตัวอย่างการเปลี่ยน URL จาก domain.com/kg/home.html เป็น domain.com/home?region=kg&market=special
-            // ในกรณีนี้เราไม่ต้องการเปลี่ยนหน้าเพราะเป็นหน้าเดียว
-            // แต่ถ้าต้องการเปลี่ยน URL โดยไม่โหลดหน้าใหม่ สามารถใช้ history.pushState()
-            const newURL = window.location.origin + '/home?region=kg&market=special';
-            history.pushState({}, '', newURL);
-        }
-        
-        // เรียกใช้ฟังก์ชันเมื่อหน้าโหลดเสร็จ
-        window.addEventListener('load', redirectToNewURL);
-    </script>
+    
 </body>
 </html>
+
